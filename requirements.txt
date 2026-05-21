@@ -1,0 +1,7 @@
+tensorflow[and-cuda] 
+albumentations 
+pillow 
+lxml 
+scikit-image 
+scikit-learn 
+matplotlib
