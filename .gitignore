@@ -5,6 +5,7 @@ __pycache__/
 
 #Dataset
 data/rimes_raw/DVD1
+data/rimes_masks
 
 # C extensions
 *.so
