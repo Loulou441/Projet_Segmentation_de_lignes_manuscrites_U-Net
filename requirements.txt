@@ -1,4 +1,4 @@
-tensorflow[and-cuda] 
+tensorflow
 albumentations 
 pillow 
 lxml 
