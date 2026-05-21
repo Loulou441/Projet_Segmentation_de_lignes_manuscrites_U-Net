@@ -28,7 +28,7 @@ class IoUMetric(keras.metrics.Metric):
         self.union.assign(0.0)
 
 
-def train(data_dir="/content/drive/MyDrive/ColabNotebooks/DVD1_bis",
+def train(data_dir="data/rimes_raw/DVD1",
           mask_dir="data/rimes_masks",
           batch_size=8,
           epochs=30,
