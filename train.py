@@ -1,7 +1,7 @@
 # train.py
 import tensorflow as tf
 from tensorflow import keras
-from utils import combined_loss, IoUMetric
+from utils import combined_loss
 from model import build_unet
 from dataset import build_datasets
 
