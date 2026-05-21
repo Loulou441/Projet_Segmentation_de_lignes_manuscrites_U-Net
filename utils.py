@@ -82,3 +82,6 @@ def combined_loss(y_true, y_pred, alpha=0.5):
     bce  = tf.reduce_mean(bce)
     dice = dice_loss(y_true, y_pred)
     return alpha * bce + (1 - alpha) * dice
+
+if __name__ == "__main__":
+    batch_generate_masks_rimes("data/rimes_raw/DVD1", "data/rimes_masks")
