@@ -2,10 +2,10 @@
 import os
 import tensorflow as tf
 from tensorflow import keras
-from utils import batch_generate_masks_rimes, combined_loss, IoUMetric
+from utils import batch_generate_masks_rimes, combined_loss
 from evaluate import evaluate, visualize_prediction
 from dataset import build_datasets
-from train import train
+from train import train, IoUMetric
 from model import build_unet
 
 if __name__ == "__main__":
@@ -17,7 +17,7 @@ if __name__ == "__main__":
         "best_unet.keras",
         custom_objects={"combined_loss":combined_loss, "IoUMetric": IoUMetric}
     )
-    _, val_ds = build_datasets("data/rimes_raw/DVD1_bis", "data/rimes_masks")
+    _, val_ds = build_datasets("data/rimes_raw/DVD1", "data/rimes_masks")
 
     evaluate(model, val_ds)
     visualize_prediction(model, val_ds, idx=0)

@@ -3,7 +3,8 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow import keras
-from utils import combined_loss, IoUMetric
+from train import IoUMetric
+from utils import combined_loss
 from dataset import build_datasets
 
 def evaluate(model, dataset, threshold=0.5):
